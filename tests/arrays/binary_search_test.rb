@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../../arrays/binary_search.rb'
 
-class TestMeme < MiniTest::Unit::TestCase
+class TestBinarySearch < MiniTest::Unit::TestCase
   def setup
     @array = [1,2,3,4,5]
   end
