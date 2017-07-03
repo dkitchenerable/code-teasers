@@ -23,6 +23,6 @@ class TestMaxInWindow < MiniTest::Unit::TestCase
   end
 
   def test_window_size_one
-    assert_equal(@array, max_in_window(@array, 1))
+    assert_equal([-4,2,-5,1,-1,6], max_in_window(@array, 1))
   end
 end
