@@ -25,10 +25,9 @@ end
 
 def search(arr, val)
   left = 0
-  right = arr.size
-  while left <= right
+  right = arr.size - 1
+  while left <= right 
     middle = (left + right) / 2
-    return false if  arr[middle].nil?
     return true if arr[middle] == val
     if val < arr[middle]
       left = left
