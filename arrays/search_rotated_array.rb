@@ -1,10 +1,8 @@
-# SOLVED
-# basic idea: if one half is sorted and val is in range, then normal binary
-# else find the unsorted side and search in there
-  # case 1: left half is sorted and val is in that range
-  # case 2: right half is sorted and val is in that range
-  # case 3: left half is unsorted
-  # case 4: right half is unsorted
+# problem: given an array has some amount of rotations, determine if it contains a value
+# time: O(logn)
+# space: O(1)
+# solution: if one half is sorted and val is in range, then normal binary
+# else find the unsorted side and search there
 def search_rotated(arr, val)
   rec_search(arr, 0, arr.size-1, val)
 end
