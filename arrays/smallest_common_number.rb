@@ -1,6 +1,7 @@
-# SOLVED
-#Given three integer arrays sorted in ascending order, find the smallest number that is common in all three arrays.
-# starting with i, set next index to smallest number
+# problem: Given three sorted integer arrays, find the smallest number that is common in all three arrays.
+# my solution: setup 3 iterators for each array. if they do not match, update the iterator for the smallest value
+# time: O(n)
+# space: O(1)
 
 def find_smallest_common_number(a1, a2, a3)
   a1i = 0
@@ -20,9 +21,3 @@ def find_smallest_common_number(a1, a2, a3)
   end
   return  nil
 end
-
-a1 = [1,2]
-a2 = [2]
-a3 = [1,2,3]
-
-p find_smallest_common_number(a1, a2, a3)
