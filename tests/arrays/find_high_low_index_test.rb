@@ -16,11 +16,14 @@ class TestFindHighLowIndex < MiniTest::Unit::TestCase
   end
 
   def test_match
+    assert_equal([2,4], find_high_low_index(@array, 3))
   end
 
   def test_match_at_left_end
+    assert_equal([0,0], find_high_low_index(@array, 1))
   end
 
   def test_match_at_right_end
+    assert_equal([6,6], find_high_low_index(@array, 5))
   end
 end
