@@ -1,8 +1,8 @@
 require_relative '../helpers/node.rb'
 require 'set'
 =begin
-  problem: find all duplicates in a list
-  my solution:
+  problem: remove all duplicates in a list
+  my solution: keep track of previous nodes and visited nodes. Point to the current nodes next, if the current node has a visited key
   time: O(n)
   space: O(n)
 =end
