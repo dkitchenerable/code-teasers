@@ -4,8 +4,6 @@ require_relative '../helpers/node.rb'
   my solution: keep two variables, a previous and current node. update on every iteration. once we have reached the end of the list, we know we are at head
   time: O(n)
   space: O(1)
-on each iteration
-grab the next 
 =end
 def reverse_list(head,recursive=false)
   return rec(head) if recursive
@@ -22,4 +20,13 @@ def reverse_list(head,recursive=false)
 end
 
 def rec(current_node, prev_node=nil)
+  return unless current_node
+  if current_node.next.nil?
+    current_node.next = prev_node
+    return current_node
+  else
+    orig_next = current_node.next
+    current_node.next = prev_node
+    rec(orig_next, current_node)
+  end
 end
