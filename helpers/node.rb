@@ -7,4 +7,14 @@ class Node
     @next = nil
     @prev = nil
   end
+
+  def self.all_keys(head)
+    current_node = head
+    keys = []
+    while current_node
+      keys << current_node.key
+      current_node = current_node.next
+    end
+    return keys
+  end
 end
