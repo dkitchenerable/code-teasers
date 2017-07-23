@@ -20,6 +20,7 @@ class LinkedList
   def pop_front
     node = @head
     @head = node.next
+    node.next = nil
     @size -= 1
     update_tail
     node
@@ -65,6 +66,15 @@ class LinkedList
     back_node
   end
 
+  def keys
+    current_node = @head
+    keys = []
+    while current_node
+      keys << current_node.key
+      current_node = current_node.next
+    end
+    return keys
+  end
 
   private
  

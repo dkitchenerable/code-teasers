@@ -20,7 +20,7 @@ class TestMergeSortedLists < MiniTest::Unit::TestCase
   def test_one_list_empty
     new_head = merge_sorted_lists(nil, @l2.head)
     assert_equal(Node.all_keys(@l2.head), Node.all_keys(new_head))
-  end  
+  end
 
   def test_sort_different_digits
     new_head = merge_sorted_lists(@l1.head, @l2.head)
