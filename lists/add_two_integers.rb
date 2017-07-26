@@ -1,3 +1,9 @@
+=begin  
+  problem: given two lists, add together where least significant digit is at head
+  solution: starting with least significant digit, add and handle carry in each case
+  time:O(1)
+  space:O(c)
+=end
 def add_two_integers(head1, head2)
   l1_ptr = head1
   l2_ptr = head2
