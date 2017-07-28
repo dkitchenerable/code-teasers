@@ -18,5 +18,3 @@ def remove_whitespaces(string)
   end
   chars.slice(0,write).join
 end
-
-remove_whitespaces("  ") 
