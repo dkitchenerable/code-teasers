@@ -26,7 +26,7 @@ class BinarySearchTree
     return nil
   end
 
-  def put(key, value)
+  def put(key, value=nil)
     node = @root
     @root = put_recursive(node, key, value)
   end
