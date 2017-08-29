@@ -2,7 +2,7 @@
   problem: given an input string remove duplicates
   my solution: keep a set of "seen" characters, read and write pointer. write any read ptr character that is not in set
   time: O(n)
-  space: O(n)
+  space: O(1)
 =end
 require 'set'
 
