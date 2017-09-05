@@ -6,11 +6,11 @@ def inorder_traversal(tree)
     if node
       stack.push(node)
       node = node.left
-      next
+    else
+      pop_node = stack.pop
+      print_arr << pop_node.key
+      node = pop_node.right
     end
-    pop_node = stack.pop
-    print_arr << pop_node.key
-    node = pop_node.right
   end
   return print_arr
 end
