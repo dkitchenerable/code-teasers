@@ -8,9 +8,9 @@ def palindrome_substrings(string)
   pals = []
   chars = string.chars
   for i in 0..chars.length - 1
-    # check if current character is middle of a palindrome
+    # for palindromes of odd characters
     append_substrings(chars, i-1, i+1, pals)
-    # need to check if current character is beginning of a palindrome
+    # for palindromes of even characters
     append_substrings(chars, i, i+1, pals)
   end
   return pals
